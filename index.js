@@ -24,7 +24,8 @@ const client = new MongoClient(process.env.URI, {
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
+
     const db = client.db("VistaPulseDB");
     const blogsCollection = db.collection("blogs");
 
